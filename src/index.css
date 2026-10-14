@@ -1,2 +1,24 @@
 
 @import "tailwindcss";
+
+@theme inline {
+  --color-white : var(--clr-white);
+  --color-dark: var(--clr-dark);
+  --color-primary: var(--clr-primary);
+  --color-secondary: var(--clr-secondary);
+  --color-bright: var(--clr-bright);
+  --font-roboto: var(--font-roboto)
+}
+
+@layer base {
+  :root {
+    /* Tokens primitifs */
+    --clr-white: #ffffff;
+    --clr-dark: #000000;
+    --clr-primary : #e60012;
+    --clr-secondary : #fa3931;
+    --clr-bright: #fff10c;
+    --font-roboto: "Roboto"
+    
+  }
+}
